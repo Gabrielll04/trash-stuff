@@ -1,5 +1,7 @@
 {pkgs, ...}: {
- 
+
+  imports = [ ../commom ]; 
+
   home.packages = with pkgs; [
     pokemon-colorscripts-mac
     nitch
@@ -17,18 +19,6 @@
     extraConfig = {
       init.defaultBranch = "main";
       color.ui = true;
-    };
-  };
-
-  programs.firefox = {
-    enable = true;
-    profiles.gabriel = {
-      isDefault = true;
-      path = "gabriel.default";
-
-      settings = {
-        "signon.rememberSignons" = false;
-      };
     };
   };
 

@@ -104,10 +104,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.nushell;
     packages = with pkgs; [
-      firefox
       kate
-      lunarvim
-      racket
     ];
   };
 

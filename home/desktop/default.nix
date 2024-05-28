@@ -1,13 +1,11 @@
 { pkgs, inputs, ... }:
 {
   imports = [
-    ./nixvim.nix
-    ./git.nix
     ./waybar.nix
     ./hyprland.nix
     ./nushell.nix
     ./alacritty.nix
-    ./firefox.nix
+    ../desktop
   ];
 
   home.stateVersion = "23.05";
