@@ -33,7 +33,7 @@
     inherit lib;
     nixosConfigurations."main-desktop" = lib.nixosSystem {
       specialArgs = { inherit inputs outputs; };
-      modules = [ ./hosts/main-desktop ];
+      modules = [ ./hosts/desktop ];
     };
 
     nixosConfigurations."college-vm" = lib.nixosSystem {
@@ -53,7 +53,7 @@
       "gabriel@nixos" = lib.homeManagerConfiguration { 
         pkgs = nixpkgs.legacyPackages.${system};
 	      extraSpecialArgs = { inherit inputs outputs; };
-    	  modules = [ ./home/main-desktop ];
+    	  modules = [ ./home/desktop ];
       };
     };
   };
