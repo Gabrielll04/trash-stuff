@@ -5,7 +5,8 @@
     settings = {
 	monitor = "HDMI-A-1,1920x1080@144,0x0,1";
 	input = {
-        kb_layout = "br";
+        kb_layout = "us";
+	kb_variant = "intl";
       };
       dwindle = {
 	pseudotile = "yes";

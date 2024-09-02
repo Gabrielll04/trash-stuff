@@ -39,8 +39,8 @@
   #services.xserver.displayManager.sddm.theme = "where_is_my_sddm_theme";
 
   services.xserver = {
-    layout = "br";
-    xkbVariant = "";
+    layout = "us";
+    xkbVariant = "intl";
   };
 
   services.fstrim = {
