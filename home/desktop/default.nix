@@ -5,7 +5,7 @@
     ./hyprland.nix
     ./nushell.nix
     ./alacritty.nix
-    ../desktop
+    ../commom
   ];
 
   home.stateVersion = "23.05";
