@@ -47,9 +47,7 @@
         extraSpecialArgs = { inherit inputs outputs; };
         modules = [ ./home/vm ];
       };
-    };
-
-    homeConfigurations = {
+   
       "gabriel@nixos" = lib.homeManagerConfiguration { 
         pkgs = nixpkgs.legacyPackages.${system};
 	      extraSpecialArgs = { inherit inputs outputs; };

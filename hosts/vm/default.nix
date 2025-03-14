@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      ./hardware-configuration.nix  
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -123,6 +123,7 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
      alacritty
+     git
      glibc
      gcc
      gnumake
